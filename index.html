@@ -22,13 +22,13 @@
 
   <script async>
     // Slow JS
-    function wait(ms) {
-      var start = Date.now(),
-        now = start;
-      while (now - start < ms) {
-        now = Date.now();
-      }
-    }
+    // function wait(ms) {
+    //   var start = Date.now(),
+    //     now = start;
+    //   while (now - start < ms) {
+    //     now = Date.now();
+    //   }
+    // }
     // anti flicker
     const antiflicker = () => {
       document.body.style.visibility = 'hidden';
@@ -37,7 +37,7 @@
         console.log('rxe')
       });
     }
-    wait(1000);
+    // wait(1000);
     antiflicker();
   </script>
 
